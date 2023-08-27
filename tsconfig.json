@@ -1,0 +1,14 @@
+{
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "version": "4.4.2",
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "rootDir": "./src",
+    "outDir": "./lib",
+    "module": "ES2022",
+    "target": "es2017"
+  },
+  "include": ["src/**/*.ts"]
+}
