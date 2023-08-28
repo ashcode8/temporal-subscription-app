@@ -6,9 +6,10 @@
     "declarationMap": true,
     "sourceMap": true,
     "rootDir": "./src",
-    "outDir": "./lib",
-    "module": "ES2022",
-    "target": "es2017"
+    "outDir": "./lib"
+    // "module": "ES2022",
+    // "target": "es2017"
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
 }
