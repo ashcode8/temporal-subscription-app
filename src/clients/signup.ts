@@ -21,8 +21,9 @@ async function signup(): Promise<void> {
         },
       ],
     });
-
-    console.log(`Started workflow with ID=${wfHandle.workflowId} and result=${wfHandle.result()}`);
+    console.log(`Started workflow with ID=${wfHandle.workflowId}`);
+    const planStatus = await wfHandle.result();
+    console.log(`wf execution result= ${planStatus}`);
   } catch (error) {
     console.error(error);
   }

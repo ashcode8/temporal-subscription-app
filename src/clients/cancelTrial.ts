@@ -2,6 +2,7 @@ export {};
 import { wfClient } from './signup';
 import { clientIDs } from './constants';
 import { cancelTrial } from '../server/workflows';
+import { PlanStatus } from '../server/workflows';
 
 async function trialCancellation() {
   try {
